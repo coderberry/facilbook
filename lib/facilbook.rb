@@ -10,7 +10,7 @@ module Facilbook
       end
 
       def call(env)
-        request = Request.new(env)
+        request = ::Rack::Request.new(env)
         
         if request.POST['signed_request']
           env["REQUEST_METHOD"] = 'GET'
@@ -130,7 +130,6 @@ module Facilbook
       if signed_request
         cookies["sr_#{FACILBOOK_CONFIG[:app_id]}"] = params[:signed_request]
       else
-        binding.pry
         signed_request = cookies["sr_#{FACILBOOK_CONFIG[:app_id]}"]
       end
       return signed_request

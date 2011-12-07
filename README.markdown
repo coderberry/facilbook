@@ -1,3 +1,2 @@
-FacilBook - Simple Facebook Navigation
-======================================
+## FacilBook - Simple Facebook Navigation
 
