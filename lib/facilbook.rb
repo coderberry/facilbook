@@ -27,7 +27,7 @@ module Facilbook
       options.symbolize_keys!
       image_url = "https://graph.facebook.com/#{uid}/picture"
       if options[:type] && (['square','small','large'].include? options[:type])
-        image_url << "?type=#{type}"
+        image_url << "?type=#{options[:type]}"
       end
       
       src = image_url
