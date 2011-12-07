@@ -8,6 +8,9 @@ Facilbook is a set of tools that makes navigation with Facebook easy. See usage 
 Facilbook is used in conjuction with Omniauth for Facebook.  It is recommended that you have authentication in place
 using the `omniauth-facebook` gem (see the [Simple Omniauth Railscast](http://railscasts.com/episodes/241-simple-omniauth))
 
+One of the best features of this gem is that it places the decrypted signed request into the request scope.
+Anywhere in the application you can access this via @signed_request.
+
 ## Getting Started
 
 0 - Prerequisite: You need a facebook app.  Have your API Key, Application
