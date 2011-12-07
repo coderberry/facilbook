@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Facilbook::VERSION
   s.authors     = ["Eric Berry", "Brian Johnson"]
   s.email       = ["cavneb@gmail.com", "bjohnson@1on1.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/cavneb/facilbook"
   s.summary     = "Simple (facil) Facebook helpers that allow for navigation"
   s.description = "Simple (facil) Facebook helpers that allow for navigation"
 
